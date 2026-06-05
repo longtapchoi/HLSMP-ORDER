@@ -1,4 +1,4 @@
-name: DonutOrder
+name: HLSMPOrder
 version: '1.1'
 main: de.elivb.donutOrder.Order
 api-version: '1.21'

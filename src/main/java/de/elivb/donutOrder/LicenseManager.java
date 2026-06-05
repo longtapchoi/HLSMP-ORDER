@@ -26,8 +26,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class LicenseManager {
    private final JavaPlugin plugin;
    private final String API_URL = "https://web14641.cweb06.gamingcontrol.de/license/admin.php";
-   private final String PLUGIN_NAME = "DonutOrder";
-   private final String PLUGIN_ID = "donutorder";
+   private final String PLUGIN_NAME = "HLSMPOrder";
+   private final String PLUGIN_ID = "hlsmporder";
    private File licenseFile;
    private FileConfiguration licenseConfig;
    private String serverId;
@@ -70,7 +70,7 @@ public class LicenseManager {
 
    public boolean validateLicenseOnStartup() {
       this.licenseKey = this.licenseConfig.getString("license-key", "");
-      if (!this.licenseKey.isEmpty() && !this.licenseKey.equals("YOUR_KEY_HERE")) {
+      if (!this.licenseKey.isEmpty() && !this.licenseKey.equals("MQF3SX4C-QP8KWRQ3-6IOWBYPK-JCTLS83M")) {
          String redColor = "\u001b[31m";
          String greenColor = "\u001b[32m";
          String resetColor = "\u001b[0m";

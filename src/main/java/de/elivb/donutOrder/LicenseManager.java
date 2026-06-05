@@ -27,7 +27,7 @@ public class LicenseManager {
    private final JavaPlugin plugin;
    private final String API_URL = "https://web14641.cweb06.gamingcontrol.de/license/admin.php";
    private final String PLUGIN_NAME = "HLSMPOrder";
-   private final String PLUGIN_ID = "hlsmporder";
+   private final String PLUGIN_ID = "donutorder";
    private File licenseFile;
    private FileConfiguration licenseConfig;
    private String serverId;

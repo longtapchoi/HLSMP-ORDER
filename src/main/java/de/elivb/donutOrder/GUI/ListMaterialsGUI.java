@@ -132,14 +132,14 @@ public class ListMaterialsGUI implements Listener {
             player.openSign(sign, Side.FRONT);
          }
       }, 2L);
-      // Xóa block sau 600 tick (30 giây)
+      // Xóa block sau 1200 tick (30 giây)
       Bukkit.getScheduler().runTaskLater(this.plugin, () -> {
          if (signLocFinal.getBlock().getType() == Material.OAK_WALL_SIGN) {
             signLocFinal.getBlock().setType(originalType, false);
          }
          this.signLocations.remove(playerId);
          this.signOriginalTypes.remove(playerId);
-      }, 600L);
+      }, 1200L);
    }
 
    @EventHandler

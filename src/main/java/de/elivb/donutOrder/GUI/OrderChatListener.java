@@ -74,7 +74,7 @@ public class OrderChatListener implements Listener {
                this.orderGUI.getNewOrderData().put(playerId, data);
                Bukkit.getScheduler().runTask(this.plugin, () -> this.orderGUI.openNewOrderGUI(player));
             }
-         }, 600L);
+         }, 1200L);
       }, 2L);
    }
 
